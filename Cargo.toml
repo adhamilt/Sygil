@@ -1,0 +1,22 @@
+[package]
+name = "sygil"
+version = "0.1.0"
+edition = "2021"
+
+[build-dependencies]
+lalrpop = "0.21.0"
+
+[dependencies]
+cached = "0.53.1"
+lalrpop-util = { version = "0.21.0", features = ["lexer", "unicode"] }
+ntest = "0.9.3"
+quickcheck = "1.0.3"
+quickcheck_macros = "1.0.0"
+regex = "1.10.6"
+serde = { version = "1.0", features = ["rc", "derive"] }
+
+[dev-dependencies]
+criterion = { version = "0.5.1", features = ["html_reports"] }
+
+[profile.bench]
+debug = true
