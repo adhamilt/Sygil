@@ -1,9 +1,10 @@
 pub mod arbitrary;
 pub mod eq;
+pub mod hash;
 pub mod prelude;
 
 #[derive(Debug, Copy, Clone)]
-struct Symbol {
+pub struct Symbol {
     pub name: char,
     pub subscript: Option<u32>,
 }

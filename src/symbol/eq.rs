@@ -6,6 +6,8 @@ impl PartialEq<Symbol> for Symbol {
     }
 }
 
+impl Eq for Symbol {}
+
 #[cfg(test)]
 mod tests {
     use super::*;

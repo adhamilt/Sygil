@@ -1,9 +1,11 @@
 pub mod add;
 pub mod arbitrary;
 pub mod eq;
+pub mod hash;
+pub mod prelude;
 
 #[derive(Clone, Copy, Debug)]
-struct Constant {
+pub struct Constant {
     pub(super) value: i32,
 }
 
